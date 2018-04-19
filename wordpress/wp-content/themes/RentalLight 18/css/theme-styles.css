@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Junge|Poppins:500');
+
+* {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	}
+
+body{
+	font-family: 'Junge', serif;
+	font-size: 12pt;
+	font-weight: 300;
+	line-height: 1em;
+	color: #585858;
+	max-width: 960px;
+	padding: 16px;
+	margin: auto;
+	background-color: #f4f4f4;
+	}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 30pt;
+	color: #FFCC33;
+	}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 38pt;
+	color: #f71b3f;
+	}
+
+h3 {
+	font-family: 'Junge', serif;
+	font-weight: 300;
+	font-size: 18pt;
+	}
+
+main{
+	align-content: center;
+	}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+/* Page Style PLACE HOLDER - WP DOCUMENTATION 
+THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE 
+(  ) FOR --> BODY_CLASS() */
+
+.page {
+    /* styles for all posts within the page class */
+}
+.page-id-2 {
+    /* styles for only page ID number 2 */
+}
+.logged-in {
+    /* styles for all pageviews when the user is logged in */
+}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+/* THESE STYLE THE SPECIFIC POST BUT NOT USING FOR NOW.
+SEE WP DOCUMENTATION FOR DETAILS */
+
+.post {
+    /* Styles for all posts */
+}
+ 
+.post-4564 {
+    /* Styles for only this post (ID number 4564) */
+}
+ 
+.category-news {
+    /* Styles for all posts in the 'news' category  */
+}
+ 
+.format-standard {
+    /* Styles for all posts assigned the post-format of 'standard'  */
+}
+
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
+/* CURRENT POST DETAILS AND STYLE BELOW */
+
+.post .post_date h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 10pt;
+	}
+
+.post{
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 10px;
+	}
+
+.post .post_image{
+	margin:auto;
+	max-width: auto;
+	}
+
+/* NOT SURE THIS IS THE CORRECT MARK UP  */
+
+
+.post .post_image a h2:hover {
+    color: #dff280;
+    text-decoration: none;
+}
+
+.post .post_video a h2:hover {
+    color: #f67280;
+    text-decoration: none;
+}
+
+/*/////////////////////////////////////*/
+
+.post a {
+	text-decoration: none;
+	color: #a00684;
+	}
+
+.post a:hover {
+	color: #7921ff;
+	}
+
+a {
+	text-decoration: none;
+	color: #585858;
+	}
+
+a:hover {
+	color:darkturquoise;
+	}
+
+/* List */
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 10pt;
+	}
+
+nav li {
+	float: left;
+	}
+
+nav li a {
+	display: block;
+	padding: 8px;
+	background-color: #dddddd;
+	background-size: 100%;
+	}
+
+ul{
+	display: table;
+	list-style-type: none;
+	}
+
+li {
+	margin-bottom: .75rem;
+	list-style-type: none;
+	}
+
+
+li ul li {
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 1px solid #aaa;
+	display: block;
+	float: left;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 50%;
+	}
+
+/* Forms */
+
+.data{
+	padding: 10px;
+	border: solid 5pt;
+	border-color: #334BFF;
+	background-color: white;
+	align-content: center;
+	margin: auto;   
+	}
+
+input[type=button], input[type=submit]{
+	background-color: #FFCC33;
+	border: none;
+	color: white;
+	padding: 16px 10px;
+	text-decoration: none;
+	width: 100%;
+	cursor:pointer;
+	}
+
+input[type=button]:hover {
+	background-color: #4CAF50;
+	color: white;
+	}
+
+form:not(.site-edit) input {
+	display: block;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	width: 100%;
+	}
+
+form:not(.site-edit) input[type=submit] {
+	background-color: #FFCC33;
+	text-transform: uppercase;
+	}
+
+
+input::placeholder {
+	color: #ddd;
+	font-weight: 700;
+	text-transform: uppercase;
+	}
+
+
+/* Footer */
+footer {
+	border-top: 3pt solid #FFCC33;
+	}
+
+footer nav{
+	margin: auto;
+	padding-top: 20px;
+	align-content: center;
+	}
+
+footer p{
+	font-size: 12px;
+	color: #FFCC33;
+	align-content: center;
+	}
