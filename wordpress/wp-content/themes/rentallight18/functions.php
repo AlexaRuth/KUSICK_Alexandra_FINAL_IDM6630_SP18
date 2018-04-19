@@ -2,7 +2,9 @@
 
 function create_unit_post_type() {
 	$labels = array(
-		'name' => _x('Units', 'post_type_general_name')
+		'name'      => _x('Units', 'post_type_general_name'),
+		'add_new'   => _x( 'Add New', 'unit'),
+		'edit_item' => 'Edit Units'
 	);
 
 	$args = array(

@@ -5,7 +5,7 @@
 	<body <?php body_class(); ?>>
 
 		<header>
-			<?php get_template_part('page-apartments'); ?>
+			<?php get_template_part('loop-apartments'); ?>
 		</header>
 
 
