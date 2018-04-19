@@ -1,5 +1,26 @@
 <?php
 
+function create_unit_post_type() {
+	$labels = array(
+		'name' => _x('Units', 'post_type_general_name')
+	);
+
+	$args = array(
+		'labels' => $labels,
+		'menu_position' => 5,
+		'supports' => array('title', 'thumbnail', 'editor'),
+		'public' => true
+	);
+
+	register_post_type('unit', $args);
+}
+
+add_action('init','create_unit_post_type');
+
+
+/////////////////////////////////////////////
+
+
 add_theme_support( 'post-thumbnails' );
 
 function loadCSS() {
