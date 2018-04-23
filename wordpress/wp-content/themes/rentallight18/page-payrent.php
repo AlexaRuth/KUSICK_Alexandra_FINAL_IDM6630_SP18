@@ -1,13 +1,14 @@
 <!-- <?echo basename(__FILE__); ?>  -->
-<section>
-	
-<?php get_template_part('nav'); ?>
-<!--<h4>thank you for visiting</h4>-->
 
-</section>
-<?php wp_footer(); ?>
+<?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-</body>
-</html>
+	<body <?php body_class(); ?>>
+
+
+		<footer>
+			<?php get_footer(); ?> 
+		</footer>
+
+	</body>
 
 <!-- <?php echo "END OF" . basename(__FILE__); ?>  -->

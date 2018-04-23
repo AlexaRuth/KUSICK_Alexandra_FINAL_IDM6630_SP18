@@ -6,7 +6,7 @@ $units_post_type_query = array(
 'post_status' => 'publish'
 );
 
-$get_units = WP_Query($units_post_type_query);
+$get_units = wp_query($units_post_type_query);
 
 
 if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_units->the_post(); ?> 
@@ -27,7 +27,6 @@ if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_unit
 
 <?php $pfx_date = get_the_date( $format, $post_id ); ?> 
 
-<?php the_category( $separator, $parents, $post_id ); ?>
 
 <?php endwhile; else : ?>
 		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
