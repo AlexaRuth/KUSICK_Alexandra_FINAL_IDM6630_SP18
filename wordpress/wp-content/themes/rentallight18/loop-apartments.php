@@ -18,7 +18,7 @@ if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_unit
 
 <p><?php the_field('sqft'); ?></p>
 <p><?php the_field('rent_per_month'); ?></p>
-
+<p><?php the_field('bedrooms'); ?></p>
 
 			<?php //the_content(); ?>
 		</article>
