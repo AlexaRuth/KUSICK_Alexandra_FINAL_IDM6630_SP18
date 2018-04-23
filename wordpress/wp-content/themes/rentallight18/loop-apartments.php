@@ -16,7 +16,11 @@ if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_unit
 		<a href="<?php the_permalink(); ?>">
 			<?php the_title('<h2>','</h2>'); the_post_thumbnail(); ?> </a>
 
-			<?php the_content(); ?>
+<p><?php the_field('sqft'); ?></p>
+<p><?php the_field('rent_per_month'); ?></p>
+
+
+			<?php //the_content(); ?>
 		</article>
 
 	<br />
