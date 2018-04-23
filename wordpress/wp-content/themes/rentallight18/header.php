@@ -1,7 +1,7 @@
 <!-- <?echo basename(__FILE__); ?> -->
 <html>
 	<head>
-		<title>IDM 6630 - Development Docker Container</title>
+		<title>IDM 6630 - Final Project</title>
 		<?php wp_head(); ?>
 
 		<meta charset="utf-8">
