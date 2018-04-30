@@ -6,13 +6,13 @@ $units_post_type_query = array(
 'post_status' => 'publish'
 );
 
-$get_units = wp_query($units_post_type_query);
+$get_units = new WP_Query($units_post_type_query);
 
 
 if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_units->the_post(); ?> 
 
 
-	<article <?php post_class(); ?>>
+	<article <?php post_class( 'units' ); ?>>
 		<a href="<?php the_permalink(); ?>">
 			<?php the_title('<h2>','</h2>'); the_post_thumbnail(); ?> </a>
 

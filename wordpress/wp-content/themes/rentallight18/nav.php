@@ -2,11 +2,11 @@
 
 <nav>
 <ul>
-	<li><a href="/Apartments">Home</a></li>
-	<li><a href="/Units">Units</a></li>
-	<li><a href="/Applications">Applications</a></li>
-	<li><a href="/Maintenance">Maintenance</a></li>
-	<li><a href="/PayRent">PayRent</a></li>
+	<li><a href="/">Home</a></li>
+	<li><a href="/apartments">Apartments</a></li>
+	<li><a href="/applications">Applications</a></li>
+	<li><a href="/maintenance">Maintenance</a></li>
+	<li><a href="/payRent">PayRent</a></li>
 </ul>
 </nav>
 

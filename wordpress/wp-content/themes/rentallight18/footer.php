@@ -1,7 +1,6 @@
 <!-- <?echo basename(__FILE__); ?>  -->
 <footer>
 	
-<?php get_template_part('nav'); ?>
 <!--<h4>thank you for visiting</h4>-->
 
 </footer>

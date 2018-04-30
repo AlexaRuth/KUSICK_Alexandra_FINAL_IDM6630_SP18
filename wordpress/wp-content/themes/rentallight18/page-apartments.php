@@ -4,9 +4,9 @@
 
 	<body <?php body_class(); ?>>
 
-		<header>
+		<section>
 			<?php get_template_part('loop-apartments'); ?>
-		</header>
+		</section>
 
 
 		<footer>

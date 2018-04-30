@@ -2,16 +2,16 @@
 
 function create_unit_post_type() {
 	$labels = array(
-		'name'      => _x('Units', 'post_type_general_name'),
-		'add_new'   => _x( 'Add New', 'unit'),
-		'edit_item' => 'Edit Units'
+		'name'      => _x('unit', 'post_type_general_name'),
+		'add_new'   => _x( 'add new', 'unit'),
+		'edit_item' => 'edit unit',
 	);
 
 	$args = array(
 		'labels' => $labels,
 		'menu_position' => 5,
 		'supports' => array('title', 'thumbnail', 'editor'),
-		'public' => true
+		'public' => true,
 	);
 
 	register_post_type('unit', $args);
@@ -20,16 +20,16 @@ function create_unit_post_type() {
 add_action('init','create_unit_post_type');
 
 
-/////////////////////////////////////////////
-
 
 add_theme_support( 'post-thumbnails' );
+
+
 
 function loadCSS() {
 	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/theme-styles.css' );
 }
 
-add_action('wp_enqueue_script', 'loadCSS'); 
+add_action('wp_enqueue_scripts', 'loadCSS'); 
 
 function customBodyClasses($classes) {
 

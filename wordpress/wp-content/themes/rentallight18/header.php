@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href= "style.css">
-		<link href="https://fonts.googleapis.com/css?family=Junge|Poppins:500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Signika:400,600" rel="stylesheet">
 
 		<?php wp_head(); ?>
 	</head>

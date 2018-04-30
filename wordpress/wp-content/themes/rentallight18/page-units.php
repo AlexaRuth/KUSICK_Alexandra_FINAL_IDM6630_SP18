@@ -1,35 +1,18 @@
+<!-- <?echo basename(__FILE__); ?>  -->
 
-<?php 
+<?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-$units_post_type_query = array(
-'post_type'=> 'units',
-'post_status' => 'publish'
-);
+	<body <?php body_class(); ?>>
 
-$get_units = WP_Query($units_post_type_query);
-
-
-if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_units->the_post(); ?> 
+		<section>
+			<?php get_template_part('single-unit'); ?>
+		</section>
 
 
-	<article <?php post_class(); ?>>
-		<a href="<?php the_permalink($the_title); ?>">
-			<?php the_title('<h2>','</h2>'); the_post_thumbnail(); ?> </a>
+		<footer>
+			<?php get_footer(); ?> 
+		</footer>
 
+	</body>
 
-<p><?php the_field('sqft'); ?></p>
-<p><?php the_field('rent_per_month'); ?></p>
-<p><?php the_field('bedrooms'); ?></p>
-
-			<?php //the_content(); ?>
-		</article>
-
-	<br />
-
-<?php $pfx_date = get_the_date( $format, $post_id ); ?> 
-
-<?php the_category( $separator, $parents, $post_id ); ?>
-
-<?php endwhile; else : ?>
-		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-	<?php endif; ?>
+<!-- <?php echo "END OF" . basename(__FILE__); ?>  -->
