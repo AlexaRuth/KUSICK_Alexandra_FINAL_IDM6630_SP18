@@ -1,6 +1,6 @@
 <!-- <?echo basename(__FILE__); ?>  -->
 
-<nav>
+<nav class="main-navigation" role="navigation">
 <ul>
 	<li><a href="/">Home</a></li>
 	<li><a href="/apartments">Apartments</a></li>
