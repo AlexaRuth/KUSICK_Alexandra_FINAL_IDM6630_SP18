@@ -4,9 +4,16 @@
 
 	<body <?php body_class(); ?>>
 
-		<section>
+
+<header class="entry-header">
+	<h1 class="entry-title"> Apartments </h1>
+</header>
+
+
+
+		<div class="main-content">
 			<?php get_template_part('loop-apartments'); ?>
-		</section>
+		</div>
 
 
 		<footer>

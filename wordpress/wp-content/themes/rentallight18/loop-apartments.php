@@ -1,18 +1,18 @@
 
 <?php 
 
-$units_post_type_query = array(
-'post_type'=> 'units',
+$unit_post_type_query = array(
+'post_type'=> 'unit',
 'post_status' => 'publish'
 );
 
-$get_units = new WP_Query($units_post_type_query);
+$get_unit = new WP_Query($unit_post_type_query);
 
 
-if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_units->the_post(); ?> 
+if ( $get_unit->have_posts() ) : while ( $get_unit->have_posts() ) : $get_unit->the_post(); ?> 
 
 
-	<article <?php post_class( 'units' ); ?>>
+	<article <?php post_class( 'unit' ); ?>>
 		<a href="<?php the_permalink(); ?>">
 			<?php the_title('<h2>','</h2>'); the_post_thumbnail(); ?> </a>
 
@@ -20,7 +20,7 @@ if ( $get_units->have_posts() ) : while ( $get_units->have_posts() ) : $get_unit
 <p><?php the_field('rent_per_month'); ?></p>
 <p><?php the_field('bedrooms'); ?></p>
 
-			<?php //the_content(); ?>
+			<?php //THIS WILL SHOW OTHER CONTENT// the_content(); ?>
 		</article>
 
 	<br />
