@@ -4,7 +4,7 @@
 	<!-- <h2>Welcome <3</h2>-->
 
 		<section>
-			<?php get_template_part('loop'); ?>
+			<?php get_template_part('loop-home'); ?>
 		</section>
 			
 </main>
