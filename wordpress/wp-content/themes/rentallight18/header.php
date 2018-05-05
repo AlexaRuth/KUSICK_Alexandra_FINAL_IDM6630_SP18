@@ -13,18 +13,23 @@
 	</head>
 
 	<body>
-		<div id="page">
+
+		<?php get_template_part('nav'); ?>
+
+		<div class="page">
+
 
 		 <header id "masthead" class="site-header" role "banner">
 
-		 	<h1 class="sitetitle"><?php echo get_bloginfo ('name'); ?></h1>
-		 	
-		 	<?php get_template_part('nav'); ?>
-
+			<h1 class="sitetitle">
+			Abode <br>
+			Milwaukee</h1>
+			
 			<!--<?php echo get_bloginfo ('description'); ?>-->
 
-		 </header>
-		</div>
+		</header>
+
+			</div>
 
 <!-- <?php echo "END OF" . basename(__FILE__); ?> -->
 

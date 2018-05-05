@@ -1,19 +1,19 @@
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Signika:400,600');
-font-family: 'Raleway', sans-serif;
-font-family: 'Signika', sans-serif;
+
 * {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     }
+
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 12pt;
     font-weight: 400;
     line-height: 1em;
     color: #ffffff;
-    max-width: 1200px;
-    padding: 16px;
+    max-width: auto;
     margin: auto;
     background-color: #0E3F67;
     }
@@ -23,85 +23,143 @@ h1 {
     font-size: 30pt;
     color: #FFCC33;
     }
+
 h2 {
     font-family: 'Signika', sans-serif;
     font-weight: 400;
     font-size: 38pt;
     color: #f71b3f;
     }
+
 h3 {
     font-family: 'Raleway', serif;
     font-weight: 500;
     font-size: 18pt;
     }
+
 main{
     align-content: center;
     }
+
+
+
+/** HEADER **/
+
+.sitetitle {
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    line-height:1em;
+}
+
+
+
+/** NAVIGATION **/
+
+.main-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    width: 12%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0E3F67;
+    background: linear-gradient(to bottom, rgba(14, 63, 103, 1), rgba(0, 0, 0, .75));
+    position: fixed;
+                z-index: 2;
+    height: 100%;
+    overflow: auto;
+}
+
+.main-navigation .nav-adjust{
+    margin-top: 125px;
+}
+
+.main-navigation li{ 
+    margin: 10px;
+ }
+
+.main-navigation li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-navigation li a.active {
+    background-color: #9926FB;
+    color: #ffffff;
+}
+
+.main-navigation li a:hover:not(.active) {
+    background-color: #9926FB;
+    color: #ffffff;
+}
+
+
+
     
-/* ALIGNMENT */
+/** ALIGNMENT **/
+
+.secondary_post{
+max-width: 720px;
+max-height: auto;
+clear: both;
+margin: auto;
+margin-top: 150px;
+align-self: center;
+border: 1pt solid red;
+}
+
 .alignleft {
     float: left;
     margin: 7px 28px 28px 0;
 }
 .alignright {
     float: right;
-    margin: 7px 0 28px 28px;
+    margin: 28px;
 }
 .aligncenter {
     clear: both;
     display: block;
     margin: 7px auto;
 }
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
 /* Page Style PLACE HOLDER - WP DOCUMENTATION 
 THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE 
 (  ) FOR --> BODY_CLASS() */
 .page{
+    padding: 16px;
     /* styles for all posts within the page class */
 }
+
 .page-id-2 {
     /* styles for only page ID number 2 */
 }
-.logged-in {
-    /* styles for all pageviews when the user is logged in */
-}
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
-/* THESE STYLE THE SPECIFIC POST BUT NOT USING FOR NOW.
-SEE WP DOCUMENTATION FOR DETAILS */
-.post {
-    /* Styles for all posts */
-}
- 
-.post-4564 {
-    /* Styles for only this post (ID number 4564) */
-}
- 
-.category-news {
-    /* Styles for all posts in the 'news' category  */
-}
- 
+
 .format-standard {
     /* Styles for all posts assigned the post-format of 'standard'  */
 }
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
-/*  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
 /* CURRENT POST DETAILS AND STYLE BELOW */
-.post .post_date h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 10pt;
-    }
+
 .post{
+    /* Styles for all posts */
     background-color: #ffffff;
-    padding: 20px;
-    margin: 10px;
+                color: gray;
+                max-width: auto;
+    padding: 10px;
+                border: 5pt solid yellow;
     }
+
 .post .post_image{
     margin:auto;
     max-width: auto;
     }
+
+
 /* NOT SURE THIS IS THE CORRECT MARK UP  */
 .post .post_image a h2:hover {
     color: #dff280;
@@ -111,7 +169,7 @@ SEE WP DOCUMENTATION FOR DETAILS */
     color: #f67280;
     text-decoration: none;
 }
-/*/////////////////////////////////////*/
+
 .post a {
     text-decoration: none;
     color: #a00684;
@@ -126,85 +184,18 @@ a {
 a:hover {
     color:darkturquoise;
     }
-/* NAVIGATION */
-.main-navigation ul {
-    list-style-type: none;
-    margin-top: 0;
-    padding: 0;
-    width: 15%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #0E3F67;
-    background: linear-gradient(to bottom, rgba(14, 63, 103, 1), rgba(0, 0, 0, .75));
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-.main-navigation li{ 
-    margin-top: 50px;
- }
-.main-navigation li a {
-    display: block;
-    color: #ffffff;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 18px;
-}
-.main-navigation li a.active {
-    background-color: #9926FB;
-    color: #ffffff;
-}
-.main-navigation li a:hover:not(.active) {
-    background-color: #9926FB;
-    color: #ffffff;
-}
-/*OLD NAV 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 10pt;
-    }
-nav li {
-    float: left;
-    }
-nav li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-    background-size: 100%;
-    }
-ul{
-    display: table;
-    list-style-type: none;
-    }
-li {
-    margin-bottom: .75rem;
-    list-style-type: none;
-    }
-li ul li {
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 1px solid #aaa;
-    display: block;
-    float: left;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 50%;
-    }
-    */
-/* Forms */
+
+
+
+/* FORMS */
+
 .formarea{
     background: #ffffff;
     max-width: 720px;
     margin-left: 350px;
     margin-top: 100px;
 }
+
 .data{
     padding: 10px;
     border: solid 5pt;
@@ -213,6 +204,7 @@ li ul li {
     align-content: center;
     margin: auto;   
     }
+
 input[type=button], input[type=submit]{
     background-color: #FFCC33;
     border: none;

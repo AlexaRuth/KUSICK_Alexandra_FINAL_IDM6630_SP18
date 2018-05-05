@@ -1,10 +1,13 @@
 <!-- <?echo basename(__FILE__); ?>  -->
 
 <nav class="main-navigation" role="navigation">
-<ul>
+<ul class="nav-adjust">
 	<li><a href="/">Home</a></li>
 	<li><a href="/apartments">Apartments</a></li>
 	<li><a href="/applications">Applications</a></li>
+	<br>
+	<br>
+	<br>
 	<li><a href="/maintenance">Maintenance</a></li>
 	<li><a href="/payRent">PayRent</a></li>
 </ul>
