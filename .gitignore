@@ -6,3 +6,10 @@ wordpress/wp-content/themes/.DS_Store
 wordpress/wp-content/themes/rentallight18/.DS_Store
 wordpress/wp-content/themes/rentallight18/img/.DS_Store
 wordpress/wp-content/themes/rentallight18/img/howell/.DS_Store
+.DS_Store
+wordpress/wp-content/.DS_Store
+wordpress/wp-content/themes/.DS_Store
+wordpress/wp-content/themes/rentallight18/.DS_Store
+wordpress/wp-content/uploads/.DS_Store
+wordpress/wp-content/uploads/2018/.DS_Store
+mysql_dump/mysql_dump.sql
