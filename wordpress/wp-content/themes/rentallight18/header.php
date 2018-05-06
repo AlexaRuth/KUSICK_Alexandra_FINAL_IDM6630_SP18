@@ -12,24 +12,15 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body>
+	<header id "masthead" class="site-header" role "banner">
 
-		<?php get_template_part('nav'); ?>
+		<h1 class="sitetitle">
+		Abode <br>
+		Milwaukee</h1>
 
-		<div class="page">
+		<!--<?php echo get_bloginfo ('description'); ?>-->
+	</header>
 
-
-		 <header id "masthead" class="site-header" role "banner">
-
-			<h1 class="sitetitle">
-			Abode <br>
-			Milwaukee</h1>
-			
-			<!--<?php echo get_bloginfo ('description'); ?>-->
-
-		</header>
-
-			</div>
 
 <!-- <?php echo "END OF" . basename(__FILE__); ?> -->
 

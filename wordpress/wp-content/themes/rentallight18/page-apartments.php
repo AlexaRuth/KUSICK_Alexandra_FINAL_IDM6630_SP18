@@ -2,18 +2,13 @@
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-	<body <?php body_class(); ?>>
+	<?php get_template_part('nav'); ?>
 
+	<body <?php body_class('page'); ?>>
 
-<header class="entry-header">
-	<h1 class="entry-title"> Apartments </h1>
-</header>
-
-
-
-		<div class="main-content">
+		<article class"post">
 			<?php get_template_part('loop-apartments'); ?>
-		</div>
+		</article>
 
 
 		<footer>

@@ -43,14 +43,18 @@ main{
 
 
 
-/** HEADER **/
+/* HEADER */
+
+.site-header{
+    padding: 5px;
+}
 
 .sitetitle {
     padding: 10px;
     margin-top: 20px;
     margin-right: 10px;
     line-height:1em;
-}
+    }
 
 
 
@@ -65,18 +69,18 @@ main{
     background-color: #0E3F67;
     background: linear-gradient(to bottom, rgba(14, 63, 103, 1), rgba(0, 0, 0, .75));
     position: fixed;
-                z-index: 2;
+    z-index: 2;
     height: 100%;
     overflow: auto;
-}
+    }
 
 .main-navigation .nav-adjust{
     margin-top: 125px;
-}
+    }
 
 .main-navigation li{ 
     margin: 10px;
- }
+    }
 
 .main-navigation li a {
     display: block;
@@ -84,103 +88,117 @@ main{
     padding: 8px 16px;
     text-decoration: none;
     font-size: 18px;
-}
+    }
 
 .main-navigation li a.active {
     background-color: #9926FB;
     color: #ffffff;
-}
+    }
 
 .main-navigation li a:hover:not(.active) {
     background-color: #9926FB;
     color: #ffffff;
-}
+    }
 
 
 
     
-/** ALIGNMENT **/
+/* ALIGNMENT */
 
-.secondary_post{
-max-width: 720px;
-max-height: auto;
-clear: both;
-margin: auto;
-margin-top: 150px;
-align-self: center;
-border: 1pt solid red;
-}
 
 .alignleft {
     float: left;
     margin: 7px 28px 28px 0;
-}
+    }
+
 .alignright {
     float: right;
     margin: 28px;
-}
+    }
+
 .aligncenter {
     clear: both;
     display: block;
     margin: 7px auto;
-}
+    }
 
 
-/* Page Style PLACE HOLDER - WP DOCUMENTATION 
+
+/* PAGE STYLE - WP DOCUMENTATION 
 THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE 
 (  ) FOR --> BODY_CLASS() */
+
 .page{
     padding: 16px;
+    max-width: 720px;
+    max-height: auto;
+    clear: both;
+    margin: auto;
+    margin-top: 150px;
+    align-self: center;
+    border: 1pt solid red;
+    }
     /* styles for all posts within the page class */
-}
+
+ /* .main-content{
+    max-width: 720px;
+    max-height: auto;
+    clear: both;
+    margin: auto;
+    margin-top: 150px;
+    align-self: center;
+    border: 1pt solid red;
+    } */ 
 
 .page-id-2 {
     /* styles for only page ID number 2 */
-}
+    }
 
 .format-standard {
     /* Styles for all posts assigned the post-format of 'standard'  */
-}
+    }
 
 
-/* CURRENT POST DETAILS AND STYLE BELOW */
+/* POST DETAILS AND STYLE BELOW */
 
-.post{
-    /* Styles for all posts */
-    background-color: #ffffff;
-                color: gray;
-                max-width: auto;
+.post .type-unit{
+    background-color: #black;
+    color: gray;
+    max-width: auto;
     padding: 10px;
-                border: 5pt solid yellow;
+    border: 5pt solid yellow;
     }
 
 .post .post_image{
     margin:auto;
+    max-height: 50%;
     max-width: auto;
     }
 
-
-/* NOT SURE THIS IS THE CORRECT MARK UP  */
 .post .post_image a h2:hover {
     color: #dff280;
     text-decoration: none;
-}
+    }
+
 .post .post_video a h2:hover {
     color: #f67280;
     text-decoration: none;
-}
+    }
 
 .post a {
     text-decoration: none;
     color: #a00684;
     }
+
 .post a:hover {
     color: #7921ff;
     }
+
 a {
     text-decoration: none;
     color: #585858;
     }
+
 a:hover {
     color:darkturquoise;
     }
@@ -194,7 +212,7 @@ a:hover {
     max-width: 720px;
     margin-left: 350px;
     margin-top: 100px;
-}
+    }
 
 .data{
     padding: 10px;
@@ -214,29 +232,38 @@ input[type=button], input[type=submit]{
     width: 100%;
     cursor:pointer;
     }
+
 input[type=button]:hover {
     background-color: #4CAF50;
     color: white;
     }
+
 form:not(.site-edit) input {
     display: block;
     font-size: 1.5rem;
     line-height: 3rem;
     width: 100%;
     }
+
 form:not(.site-edit) input[type=submit] {
     background-color: #FFCC33;
     text-transform: uppercase;
     }
+
 input::placeholder {
     color: #ddd;
     font-weight: 700;
     text-transform: uppercase;
     }
+
+
+
 /* Footer */
+
 footer {
     border-top: 3pt solid #FFCC33;
     }
+
 footer nav{
     margin: auto;
     padding-top: 20px;
