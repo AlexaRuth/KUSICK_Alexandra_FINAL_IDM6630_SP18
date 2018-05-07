@@ -36,11 +36,20 @@ h3 {
     font-weight: 500;
     font-size: 18pt;
     }
-
+/*
 main{
     align-content: center;
-    }
+    max-width: 820px;
+    border: 4px solid yellow;
+    }*/
 
+#main-section{
+    display: inline-block;
+    margin-left: 200px;
+    padding: 10px;
+    align-content: center;
+    border: 4pt solid yellow;
+    }
 
 
 /* HEADER */
@@ -206,60 +215,58 @@ a:hover {
 /* FORMS */
 
 .formarea{
-    background: #ffffff;
-    max-width: 720px;
+    background: #e0e0e0;
+    max-width: 900px;
     margin-left: 350px;
     margin-top: 100px;
+    border: 2pt solid #202f5b;
+    border-radius: 10px;
+    color: black;
     }
 
-.data{
-    padding: 10px;
-    border: solid 5pt;
-    border-color: #334BFF;
-    background-color: #000;
-    align-content: center;
-    margin: auto;   
+.formarea p{
+    padding: 20px;
+    margin: auto;
+    }
+
+.formarea h2{
+    text-align: center;
+    color: black;
     }
 
 input[type=button], input[type=submit]{
-    background-color: #FFCC33;
+    background-color: #9926FB;
     border: none;
+    border-radius: 25px;
     color: white;
     padding: 10px 10px;
     text-decoration: none;
-    width: 100%;
+    width: 50%;
     cursor:pointer;
     }
 
-input[type=button]:hover {
-    background-color: #4CAF50;
+input[type=button]:hover{
+    background-color: #ffffff;
+    -webkit-transition-duration: 0.4s;
     color: white;
     }
 
 form:not(.site-edit) input {
     display: block;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    line-height: 2rem;
     width: 100%;
     }
-
-form:not(.site-edit) input[type=submit] {
-    background-color: #FFCC33;
-    text-transform: uppercase;
-    }
-
-input::placeholder {
-    color: #ddd;
-    font-weight: 700;
-    text-transform: uppercase;
-    }
-
 
 
 /* Footer */
 
 footer {
     border-top: 3pt solid #FFCC33;
+    margin: auto;
+    padding-top: 20px;
+    align-content: center;
     }
 
 footer nav{

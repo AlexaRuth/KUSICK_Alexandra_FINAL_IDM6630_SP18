@@ -22,7 +22,6 @@ add_action('init','create_unit_post_type');
 add_theme_support( 'post-thumbnails' );
 
 
-
 function loadCSS() {
 	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/theme-styles.css', false, '20180501' );
 }

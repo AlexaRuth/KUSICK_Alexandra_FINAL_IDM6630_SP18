@@ -4,7 +4,7 @@
 
 	<body <?php body_class(''); ?>>
 
-		<article class"post">
+		<article class="post">
 			<?php get_template_part('loop-apartments'); ?>
 		</article>
 

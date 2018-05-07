@@ -16,6 +16,8 @@ if ( $get_unit->have_posts() ) : while ( $get_unit->have_posts() ) : $get_unit->
 		<a href="<?php the_permalink(); ?>">
 			<?php the_title('<h2>','</h2>'); the_post_thumbnail(); ?> </a>
 
+
+
 <p><?php the_field('sqft'); ?></p>
 <p><?php the_field('rent_per_month'); ?></p>
 <p><?php the_field('bedrooms'); ?></p>
