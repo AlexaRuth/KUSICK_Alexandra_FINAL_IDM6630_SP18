@@ -19,8 +19,6 @@ function create_unit_post_type() {
 
 add_action('init','create_unit_post_type');
 
-
-
 add_theme_support( 'post-thumbnails' );
 
 

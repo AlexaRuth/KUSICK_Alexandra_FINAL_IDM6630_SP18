@@ -1,10 +1,12 @@
 <!-- <?echo basename(__FILE__); ?>  -->
 
 <main>
-	<!-- <h2>Welcome <3</h2>-->
+	
+
+	<h2>Welcome <3</h2>
 
 		<section>
-			<?php get_template_part('loop-home'); ?>
+			<!-- <?php /*get_template_part('loop-home'); */ ?> -->
 		</section>
 			
 </main>

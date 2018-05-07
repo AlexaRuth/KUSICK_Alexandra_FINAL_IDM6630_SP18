@@ -20,6 +20,8 @@
 
 		<!--<?php echo get_bloginfo ('description'); ?>-->
 	</header>
+	
+	<?php get_template_part('nav'); ?>
 
 
 <!-- <?php echo "END OF" . basename(__FILE__); ?> -->

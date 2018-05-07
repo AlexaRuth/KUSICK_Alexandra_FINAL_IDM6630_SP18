@@ -57,7 +57,6 @@ main{
     }
 
 
-
 /** NAVIGATION **/
 
 .main-navigation ul {
@@ -74,9 +73,9 @@ main{
     overflow: auto;
     }
 
-.main-navigation .nav-adjust{
+/*.main-navigation .nav-adjust{
     margin-top: 125px;
-    }
+    }*/
 
 .main-navigation li{ 
     margin: 10px;
@@ -130,13 +129,13 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 
 .page{
     padding: 16px;
-    max-width: 720px;
+/*    max-width: 100%;*/
     max-height: auto;
     clear: both;
     margin: auto;
-    margin-top: 150px;
+/*    margin-top: 150px;*/
     align-self: center;
-    border: 1pt solid red;
+    border: 5pt solid red;
     }
     /* styles for all posts within the page class */
 
@@ -157,7 +156,6 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 .format-standard {
     /* Styles for all posts assigned the post-format of 'standard'  */
     }
-
 
 /* POST DETAILS AND STYLE BELOW */
 

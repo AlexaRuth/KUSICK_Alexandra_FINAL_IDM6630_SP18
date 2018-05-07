@@ -6,6 +6,10 @@
 </footer>
 <?php wp_footer(); ?>
 
+<h4> Joshua Talsky </h4>
+<p> Talsky Realty LLC - 4145877485</p>
+
+
 </body>
 </html>
 
