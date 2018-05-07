@@ -6,7 +6,7 @@
 
 
 		<section>
-			 <?php get_template_part('loop-home'); ?> 
+			 <?php get_template_part('loop'); ?> 
 		</section>
 
 

@@ -63,7 +63,6 @@ foreach ($locations as $location) {
         <article <?php post_class(); ?>>
           <a href="<?php the_permalink(); ?>">
           <?php the_title('<h3>','</h3>'); the_post_thumbnail(); ?> </a>
-			
         </article>
 
       <?php
