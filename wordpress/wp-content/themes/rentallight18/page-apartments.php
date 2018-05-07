@@ -4,9 +4,16 @@
 
 	<body <?php body_class(''); ?>>
 
-		<article class="post">
-			<?php get_template_part('loop-apartments'); ?>
-		</article>
+
+		<section>
+			 <?php get_template_part('loop-home'); ?> 
+		</section>
+
+
+
+		<!-- <article class="post">
+			<?php /*get_template_part('loop-apartments') */; ?>
+		</article> -->
 
 
 		<footer>

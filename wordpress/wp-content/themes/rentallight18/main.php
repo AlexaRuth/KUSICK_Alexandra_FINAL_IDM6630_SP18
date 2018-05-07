@@ -4,9 +4,9 @@
 
 	<h2>Welcome</h2>
 
-		<section>
+<!-- 		<section>
 			<!-- <?php /*get_template_part('loop-home'); */ ?> -->
-		</section>
+		</section> -->
 			
 </main>
 
