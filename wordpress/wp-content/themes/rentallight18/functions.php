@@ -1,48 +1,65 @@
 <?php
 
-function create_unit_post_type() {
-	$labels = array(
-		'name'      => _x('unit', 'post_type_general_name'),
-		'add_new'   => _x( 'add new', 'unit'),
-		'edit_item' => 'edit unit',
-	);
+//// LOAD POSTS /////
 
-	$args = array(
-		'labels' => $labels,
-		'menu_position' => 5,
-		'supports' => array('title', 'thumbnail', 'editor'),
-		'public' => true,
-	);
+	function create_unit_post_type() {
+		$labels = array(
+			'name'      => _x('unit', 'post_type_general_name'),
+			'add_new'   => _x( 'add new', 'unit'),
+			'edit_item' => 'edit unit',
+		);
 
-	register_post_type('unit', $args);
-}
+		$args = array(
+			'labels' => $labels,
+			'menu_position' => 5,
+			'supports' => array('title', 'thumbnail', 'editor'),
+			'public' => true,
+		);
 
-add_action('init','create_unit_post_type');
-
-add_theme_support( 'post-thumbnails' );
+		register_post_type('unit', $args);
+	}
 
 
-function loadCSS() {
-	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/theme-styles.css', false, '20180501' );
-}
+		add_action('init','create_unit_post_type');
 
-add_action('wp_enqueue_scripts', 'loadCSS'); 
+		add_theme_support( 'post-thumbnails' );
 
-function customBodyClasses($classes) {
 
-if (is_single()){
-	$classes[] = "my-single-class";
-}
+//// JQUERY SCRIPTS /////
 
-	$classes[] = 'my-class';
-	$classes[] = 'second';
-	$classes[] = 'third';
+	function my_theme_scripts() {
+	    wp_enqueue_script( 'my_theme_scripts', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '3.2.1', true );
+	}
+		add_action( 'wp_enqueue_scripts', 'my_theme_scripts' );
 
-	return $classes;
-}
 
-add_filter( 'body_class', 'customBodyClasses' );
 
-add_filter( 'show_admin_bar', '__return_false'); 
+//// LOAD CSS /////
+
+	function loadCSS() {
+		wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/css/theme-styles.css', false, '20180501' );
+	}
+		add_action('wp_enqueue_scripts', 'loadCSS'); 
+
+
+
+//// LOAD CUSTOM CLASSES /////
+
+	function customBodyClasses($classes) {
+
+	if (is_single()){
+		$classes[] = "my-single-class";
+	}
+
+		$classes[] = 'my-class';
+		$classes[] = 'second';
+		$classes[] = 'third';
+
+		return $classes;
+	}
+
+		add_filter( 'body_class', 'customBodyClasses' );
+
+		add_filter( 'show_admin_bar', '__return_false'); 
 
 ?>

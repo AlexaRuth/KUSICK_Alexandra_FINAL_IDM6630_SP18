@@ -1,4 +1,3 @@
-
 <?php 
 
 // This code creates the query arguments

@@ -5,7 +5,7 @@
 	<body <?php body_class(''); ?>>
 
 
-		<section>
+		<section class="post">
 			 <?php get_template_part('loop'); ?> 
 		</section>
 

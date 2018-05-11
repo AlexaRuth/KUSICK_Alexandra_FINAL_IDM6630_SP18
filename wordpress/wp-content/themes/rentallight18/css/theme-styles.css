@@ -169,8 +169,18 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 
 /* POST DETAILS AND STYLE BELOW */
 
-.post .type-unit{
+.landingPost{
     background-color: #black;
+    color: white;
+    max-width: auto;
+    padding: 10px;
+    border: 5pt solid pink;
+    }
+
+}
+
+.post .type-unit{
+    background-color: black;
     color: gray;
     max-width: auto;
     padding: 10px;
