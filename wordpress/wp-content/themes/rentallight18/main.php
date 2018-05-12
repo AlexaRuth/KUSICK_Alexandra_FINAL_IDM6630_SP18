@@ -4,7 +4,7 @@
 
 	<h2>Welcome</h2>
 
-
+<div class="landingimage"> <img src="../img/Milwaukee-Wisconsin.jpg" alt="Milwaukee">  </div>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
@@ -21,9 +21,9 @@
 
 
 
-<!-- <section>
+			<!-- <section>
 			<?php /*get_template_part('loop-home'); */ ?> -->
-		</section> -->
+		</section> 
 			
 </main>
 

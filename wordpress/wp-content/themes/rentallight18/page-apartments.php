@@ -2,24 +2,25 @@
 
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 
-	<body <?php body_class(''); ?>>
+<body <?php body_class(''); ?>>
+
+	<main id="main-section">
+
+			<article class="post">
+				 <?php get_template_part('loop'); ?> 
+			</article>
 
 
-		<section class="post">
-			 <?php get_template_part('loop'); ?> 
-		</section>
+			<!-- <article class="post">
+				<?php /*get_template_part('loop-apartments') */; ?>
+			</article> -->
+	</main>
 
 
+	<footer>
+		<?php get_footer(); ?> 
+	</footer>
 
-		<!-- <article class="post">
-			<?php /*get_template_part('loop-apartments') */; ?>
-		</article> -->
-
-
-		<footer>
-			<?php get_footer(); ?> 
-		</footer>
-
-	</body>
+</body>
 
 <!-- <?php echo "END OF" . basename(__FILE__); ?>  -->

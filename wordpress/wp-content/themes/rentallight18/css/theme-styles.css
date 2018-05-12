@@ -37,6 +37,11 @@ h3 {
     font-size: 18pt;
     }
 
+.landingimage{
+    max-height: 675px;
+    max-width: auto;
+}
+
 /*
 main{
     align-content: center;
@@ -145,19 +150,10 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
     margin: auto;
 /*    margin-top: 150px;*/
     align-self: center;
-    /*border: 5pt dotted red;*/
+    border: 5pt dotted red;
     }
     /* styles for all posts within the page class */
 
- /* .main-content{
-    max-width: 720px;
-    max-height: auto;
-    clear: both;
-    margin: auto;
-    margin-top: 150px;
-    align-self: center;
-    border: 1pt solid red;
-    } */ 
 
 .page-id-2 {
     /* styles for only page ID number 2 */
@@ -170,21 +166,25 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 /* POST DETAILS AND STYLE BELOW */
 
 .landingPost{
-    background-color: #black;
+    background-color: black;
     color: white;
     max-width: auto;
     padding: 10px;
     border: 5pt solid pink;
     }
 
-}
-
-.post .type-unit{
-    background-color: black;
-    color: gray;
-    max-width: auto;
+.post{
+    background-color: #000;
+    color: #fff;
     padding: 10px;
-    border: 5pt solid pink;
+    border: 1pt solid pink;
+
+    column-count: 2;
+    display: inline-block;
+    width: 450px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid #73AD21;  
     }
 
 .post .post_image{
