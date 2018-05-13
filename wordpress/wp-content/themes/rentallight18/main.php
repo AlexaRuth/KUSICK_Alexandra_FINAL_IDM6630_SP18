@@ -9,7 +9,6 @@
 </div> 
 
 <section class="post-landing">
-	<?php echo do_shortcode("[post_grid id='155']"); ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
 		<article <?php post_class('landingPost'); ?>>

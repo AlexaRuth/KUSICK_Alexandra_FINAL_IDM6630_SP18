@@ -67,7 +67,8 @@ foreach ($locations as $location) {
           <p><?php the_field('sqft'); ?></p>
           <p><?php the_field('rent_per_month'); ?></p>
           <p><?php the_field('bedrooms'); ?></p>
-
+          <p><?php the_field('address'); ?></p>
+          
           <?php the_content(); ?>
         </article>
 

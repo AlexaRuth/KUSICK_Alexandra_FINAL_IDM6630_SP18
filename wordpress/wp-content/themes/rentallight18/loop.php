@@ -55,11 +55,11 @@ foreach ($locations as $location) {
   // This code now loops through all the posts returned in the previous line of code
   if ( $get_location_units->have_posts() ) {
     while ( $get_location_units->have_posts() ) {
-      $get_location_units->the_post(); 
+      $get_location_units->the_post();
       
       // This is where the unit display code lives
       ?>
-        
+        				
         <article <?php post_class(); ?>>
           <a href="<?php the_permalink(); ?>">
           <?php the_title('<h3>','</h3>'); the_post_thumbnail(); ?> </a>
@@ -67,7 +67,7 @@ foreach ($locations as $location) {
 
       <?php
 
-    } 
+    }
   } else {
     // This is just a fail safe should no locations have been returned
     ?> <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p> <?php

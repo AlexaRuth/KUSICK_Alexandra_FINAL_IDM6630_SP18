@@ -7,7 +7,6 @@
 	<main id="main-section">
 
 			<article class="post">
-<?php echo do_shortcode("[post_grid id='155']"); ?>
 				 <?php get_template_part('loop');?> 
 			</article>
 
