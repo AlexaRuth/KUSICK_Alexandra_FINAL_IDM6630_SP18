@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500|Signika:400,600');
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Questrial');
 * {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -8,7 +7,7 @@
     }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Questrial', sans-serif;
     font-size: 12pt;
     font-weight: 400;
     line-height: 1em;
@@ -17,24 +16,27 @@ body{
     margin: auto;
     background-color: #0E3F67;
     }
+
 h1 {
-    font-family: 'Signika', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
     font-size: 30pt;
-    color: #FFCC33;
+    color: #ffffff;
+    line-height: .5em;
     }
 
 h2 {
-    font-family: 'Signika', sans-serif;
-    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
     font-size: 20pt;
-    color: #f71b3f;
+    color: #ffffff;
     }
 
 h3 {
-    font-family: 'Raleway', serif;
-    font-weight: 500;
+    font-family: 'Lato', serif;
+    font-weight: 300;
     font-size: 14pt;
+    color: #ffffff;
     }
 
 /*
@@ -58,7 +60,6 @@ main{
     line-height:1em;
     }
 
-
 /* Footer */
 
 footer {
@@ -79,7 +80,8 @@ footer p{
 .main-navigation ul {
     list-style-type: none;
     padding: 0;
-    width: 12%;
+    width: 15%;
+    float:left;
     text-align: center;
     color: #ffffff;
     background-color: #0E3F67;
@@ -89,10 +91,6 @@ footer p{
     height: 100%;
     overflow: auto;
     }
-
-/*.main-navigation .nav-adjust{
-    margin-top: 125px;
-    }*/
 
 .main-navigation li{ 
     margin: 10px;
@@ -122,21 +120,21 @@ footer p{
 /* ALIGNMENT */
 
 
-.alignleft {
+/*.alignleft {
     float: left;
     margin: 7px 28px 28px 0;
     }
-
-.alignright {
+*/
+/*.alignright {
     float: right;
     margin: 28px;
     }
-
-.aligncenter {
+*/
+/*.aligncenter {
     clear: both;
     display: block;
     margin: 7px auto;
-    }
+    }*/
 
 /*/////////////////
 LANDING PAGE STYLES 
@@ -144,36 +142,64 @@ LANDING PAGE STYLES
 
 #main-section{
     display: inline-block;
-    margin-left: 200px;
     padding: 10px;
     align-content: center;
-  /*  border: 4pt solid white;*/
+    border: 4pt solid white;
+    width: 82%;
+    float: right;
+    clear: both;
+    display: block;
+    margin: 7px auto;
 
     /***LANDING IMAGE***/
     /**change url to match your brand*/
     background-image: url("../img/milwaukee.jpg");
     background-repeat: no-repeat;
     background-attachment: sticky;
+    object-fit: stretch;
     z-index: 2;
     overflow: auto;
     }
 
-.landingWelcome{
-
+#welcome {
+    line-height: .5em;
+    margin-left: 70px;
+    margin-top: 50px;
+    max-width: 400px;
+    /*border: 4pt solid white;*/
 }
 
-.postLives{
-margin-top: 720px;
-
-}
+.post-landing{
+    margin-top: 720px;
+    display: inline-block;
+    float: center;
+    width: 75%;
+    height: auto;
+    margin: 10px;
+    border: 3px solid #73AD21;
+    /*columns: 3;*/
+    }
 
 .landingPost{
-    background-color: black;
-    color: white;
-    max-width: auto;
-    padding: 10px;
-    border: 5pt red;
+    background-color: white;
+    color: grey;
+    max-width: 100%;
+    margin: 5px;
+    border: solid 1pt red;
     }
+
+.landingPost h3{
+    background-color: #0E3F67;
+    color: white;
+    padding: 20px;
+    margin:0px;
+    }
+
+.landingPost p{
+    padding: 20px;
+    margin:5px;
+    }
+
 
 /*
 END OF LANDING PAGE STYLES 
@@ -186,15 +212,16 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 (  ) FOR --> BODY_CLASS() 
 /////////////////*/
 
-.page{
+/*.page{
     padding: 16px;
     max-width: 100%;
     max-height: auto;
     clear: both;
     margin: auto;
-    align-self: center;
-   /* border: 5pt dotted red;*/
-    }
+    align-self: center;*/
+   /* border: 5pt dotted red;
+    }*/
+
     /* styles for all posts within the page class */
 
 
@@ -208,7 +235,7 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 
 /* POST DETAILS AND STYLE BELOW */
 
-
+/*
 .post{
     background-color: #000;
     color: #fff;
@@ -222,7 +249,7 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
     margin: 10px;
     border: 3px solid #73AD21;  
     }
-
+*/
 
 /* POST clearfix*/
 .post:after {
@@ -231,7 +258,7 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
   clear: both;
 }
 
-.post .post_image{
+./*post .post_image{
     margin:auto;
     max-height: 50%;
     max-width: auto;
@@ -264,7 +291,7 @@ a:hover {
     color:darkturquoise;
     }
 
-
+*/
 
 /*OBJECT FILL*/
 .post .fill {

@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href= "style.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Signika:400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Questrial" rel="stylesheet">
 
 <!-- SCRIPTS -->
 
@@ -19,9 +19,9 @@
 
 	<header id "masthead" class="site-header" role "banner">
 
-		<h1 class="sitetitle">
-		Abode <br>
-		Milwaukee</h1>
+		<div class="sitetitle">
+		<h1>ABODE</h1>
+		<h1>MILWAUKEE</h1></div>
 
 	<!--<?php echo get_bloginfo ('description'); ?>-->
 	</header>

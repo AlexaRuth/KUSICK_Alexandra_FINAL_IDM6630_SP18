@@ -64,6 +64,10 @@ foreach ($locations as $location) {
           <a href="<?php the_permalink(); ?>">
           <?php the_title('<h3>','</h3>'); the_post_thumbnail(); ?> </a>
 
+          <p><?php the_field('sqft'); ?></p>
+          <p><?php the_field('rent_per_month'); ?></p>
+          <p><?php the_field('bedrooms'); ?></p>
+
           <?php the_content(); ?>
         </article>
 
