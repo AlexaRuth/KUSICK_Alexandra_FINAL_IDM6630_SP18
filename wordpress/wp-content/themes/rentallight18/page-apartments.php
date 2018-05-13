@@ -4,7 +4,7 @@
 
 <body <?php body_class(''); ?>>
 
-	<main id="main-section">
+	<main id="secondary-section">
 
 			<article class="post">
 				 <?php get_template_part('loop');?> 

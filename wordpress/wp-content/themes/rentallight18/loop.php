@@ -58,12 +58,21 @@ foreach ($locations as $location) {
       $get_location_units->the_post();
       
       // This is where the unit display code lives
-      ?>
-        				
+      ?>	
+      <main id="secondary-section">
+
         <article <?php post_class(); ?>>
           <a href="<?php the_permalink(); ?>">
           <?php the_title('<h3>','</h3>'); the_post_thumbnail(); ?> </a>
+
+          <p><?php the_field('address'); ?></p>
+          <p><?php the_field('bedrooms'); ?></p>
+          <p><?php the_field('rent_per_month'); ?></p>
+          <p><?php the_field('sqft'); ?></p>
+          
+
         </article>
+      </main>
 
       <?php
 

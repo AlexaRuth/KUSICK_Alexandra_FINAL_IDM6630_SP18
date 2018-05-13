@@ -13,7 +13,7 @@
 			<article <?php post_class('landingPost'); ?>>
 			<a href="<?php the_permalink(); ?>"> 
 				<?php the_title('<h3>','</h3>'); the_post_thumbnail(); ?> </a>
-				<?php the_content(); ?>
+				<?php the_content(); ?> 
 			</article>
 
 		<?php endwhile; else : ?>

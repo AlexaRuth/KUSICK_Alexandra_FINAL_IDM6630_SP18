@@ -141,25 +141,42 @@ LANDING PAGE STYLES
 /////////////////*/
 
 #main-section{
-    display: inline-block;
+/*  display: inline-block;*/
     padding: 10px;
-    align-content: center;
-    border: 4pt solid white;
-    width: 82%;
+    width: 1280px;
+    height: auto;
     float: right;
-    clear: both;
     display: block;
-    margin: 7px auto;
-
-    /***LANDING IMAGE***/
-    /**change url to match your brand*/
+    margin-right: auto;
+/**change url to match your brand*/
     background-image: url("../img/milwaukee.jpg");
     background-repeat: no-repeat;
-    background-attachment: sticky;
-    object-fit: stretch;
-    z-index: 2;
-    overflow: auto;
     }
+
+@media screen and (max-width: 1280px) {
+    #main-section{
+        width: 980px;
+        }
+        }
+
+@media screen and (max-width: 980px) {
+     #main-section{
+        width: 780px;
+        }
+        }
+@media screen and (max-width: 780px) {
+     #main-section{
+        width: 580px;
+        }
+        }
+
+@media screen and (max-width: 480px) {
+   #main-section{
+        width: 280px;
+        }
+}
+
+
 
 #welcome {
     line-height: .5em;
@@ -171,13 +188,12 @@ LANDING PAGE STYLES
 
 .post-landing{
     margin-top: 720px;
-    display: inline-block;
-    float: center;
-    width: 75%;
+    display: block;
+    width: 980px;
     height: auto;
     margin: 10px;
-    border: 3px solid #73AD21;
-    /*columns: 3;*/
+    border: 3px solid white;
+   /* columns: 3;*/
     }
 
 .landingPost{
@@ -187,6 +203,12 @@ LANDING PAGE STYLES
     margin: 5px;
     border: solid 1pt red;
     }
+    
+.landingPost:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .landingPost h3{
     background-color: #0E3F67;
@@ -199,6 +221,39 @@ LANDING PAGE STYLES
     padding: 20px;
     margin:5px;
     }
+
+
+
+/* INDIVIDUAL UNIT POSTS */
+
+#secondary-section{
+/*    display: inline-block;*/
+    padding: 10px;
+    width: 980px;
+    height: auto;
+    float: center;
+    clear: both;
+/*    display: block;*/
+    margin: 7px auto;
+    }
+
+
+
+/*.post{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 1pt solid pink;
+
+    column-count: 2;
+    display: inline-block;
+    width: 450px;
+    height: auto;
+    margin: 10px;
+    border: 3px solid #73AD21;  
+    }*/
+
+
 
 
 /*
@@ -294,7 +349,7 @@ a:hover {
 */
 
 /*OBJECT FILL*/
-.post .fill {
+/*.post .fill {
   object-fit: fill;
 }
 
@@ -312,7 +367,7 @@ a:hover {
 
 .post .scale-down {
   object-fit: scale-down;
-}
+}*/
 
 
 /* FORMS */
