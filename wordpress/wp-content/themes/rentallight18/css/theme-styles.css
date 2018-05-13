@@ -72,6 +72,21 @@ main{
     }
 
 
+/* Footer */
+
+footer {
+    z-index: 3;
+    margin: auto;
+    padding-top: 20px;
+    align-content: center;
+    }
+
+footer p{
+    font-size: 12px;
+    color: #FFCC33;
+    }
+
+
 /** NAVIGATION **/
 
 .main-navigation ul {
@@ -144,13 +159,12 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 
 .page{
     padding: 16px;
-/*    max-width: 100%;*/
+    max-width: 100%;
     max-height: auto;
     clear: both;
     margin: auto;
-/*    margin-top: 150px;*/
     align-self: center;
-    border: 5pt dotted red;
+   /* border: 5pt dotted red;*/
     }
     /* styles for all posts within the page class */
 
@@ -165,12 +179,18 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 
 /* POST DETAILS AND STYLE BELOW */
 
+.img-container {
+  float: left;
+  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 5px; /* if you want space between the images */
+}
+
 .landingPost{
     background-color: black;
     color: white;
     max-width: auto;
     padding: 10px;
-    border: 5pt solid pink;
+    border: 5pt red;
     }
 
 .post{
@@ -182,10 +202,18 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
     column-count: 2;
     display: inline-block;
     width: 450px;
-    height: 200px;
+    height: auto;
     margin: 10px;
     border: 3px solid #73AD21;  
     }
+
+
+/* POST clearfix*/
+.post:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .post .post_image{
     margin:auto;
@@ -211,7 +239,6 @@ THE FOLLOWING NAMES WOULD BE ADDED INSIDE THE
 .post a:hover {
     color: #7921ff;
     }
-
 a {
     text-decoration: none;
     color: #585858;
@@ -221,6 +248,28 @@ a:hover {
     color:darkturquoise;
     }
 
+
+
+/*OBJECT FILL*/
+.post .fill {
+  object-fit: fill;
+}
+
+.post .contain {
+  object-fit: contain;
+}
+
+.post .cover {
+  object-fit: cover;
+}
+
+.post .none {
+  object-fit: none;
+}
+
+.post .scale-down {
+  object-fit: scale-down;
+}
 
 
 /* FORMS */
@@ -271,15 +320,3 @@ form:not(.site-edit) input {
     }
 
 
-/* Footer */
-
-footer {
-    margin: auto;
-    padding-top: 20px;
-    align-content: center;
-    }
-
-footer p{
-    font-size: 12px;
-    color: #FFCC33;
-    }
