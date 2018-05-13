@@ -10,10 +10,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Signika:400,600" rel="stylesheet">
 
 <!-- SCRIPTS -->
-		<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
-        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
-        <script type="text/javascript" src="js/jquery.colorbox.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+
 
 <?php wp_head(); ?>
 </head>
