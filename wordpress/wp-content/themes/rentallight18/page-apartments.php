@@ -6,7 +6,7 @@
 
 	<main id="secondary-section">
 
-			<article class="post">
+			<article class="">
 				 <?php get_template_part('loop');?> 
 			</article>
 

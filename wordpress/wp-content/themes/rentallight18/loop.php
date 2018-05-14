@@ -64,11 +64,13 @@ foreach ($locations as $location) {
         <article <?php post_class(); ?>>
           <a href="<?php the_permalink(); ?>">
           <?php the_title('<h3>','</h3>'); the_post_thumbnail(); ?> </a>
-
-          <p><?php the_field('address'); ?></p>
-          <p><?php the_field('bedrooms'); ?></p>
-          <p><?php the_field('rent_per_month'); ?></p>
-          <p><?php the_field('sqft'); ?></p>
+        
+        <ul>
+          <li><h4>Address</h4><p><?php the_field('address');?></p></li>
+          <li><h4>Bedrooms</h4><p><?php the_field('bedrooms'); ?></p></li>
+          <li><h4>Rent Amount</h4><p><?php the_field('rent_per_month'); ?></p></li>
+          <li><h4>SQFT</h4><p><?php the_field('sqft'); ?></p></li>
+        </ul>
           
 
         </article>

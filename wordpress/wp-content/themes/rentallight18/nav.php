@@ -2,14 +2,14 @@
 
 <nav class="main-navigation" role="navigation">
 	<ul class="nav-adjust">
-		<li><h3><a href="/landing">Home</a></h3></li>
+		<li><h3><a href="/">Home</a></h3></li>
 		<li><h3><a href="/apartments">Apartments</a></h3></li>
 		<li><h3><a href="/applications">Applications</a></h3></li>
 		<br>
 		<br>
 		<br>
 		<li><h3><a href="/maintenance">Maintenance</a></h3></li>
-		<li><h3><a href="/payRent">PayRent</a></h3></li>
+		<li><h3><a href="#!">PayRent</a></h3></li>
 		<br>
 		<br>
 		<br>

@@ -1,8 +1,10 @@
 <!-- <?echo basename(__FILE__); ?>  -->
 
+<body <?php body_class(''); ?>>
 
 <main id="main-section">
 
+<div class="position-post">
 	<div id="welcome">
 		<h2>Welcome Home</h2>
 		<p> We service three main nieborhoods in the Milwaukee. Let us help you find your new home</p>
@@ -19,9 +21,10 @@
 		<?php endwhile; else : ?>
 		<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
+	</section>
+	</div> 
 
-	</section> 
-		
+</body>	
 
 </main>
 
